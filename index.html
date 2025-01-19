@@ -1,0 +1,669 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home | Cloud Cookies</title>
+	
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+<link rel="icon" sizes="16x16" href="images/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+<style>
+
+	body {
+		background-color: #B58F75;
+	}
+
+		.row
+            {
+                padding: 10px;
+                margin: 10px;
+                font-size: 40px;
+                width: 100%;
+            }
+
+		h1
+		{
+			text-align: center;
+			color: black;
+			letter-spacing: 5px;
+			padding: 10px 100px;
+			background-color: rgb(255, 255, 255);
+			font-family: 'Fredoka One', cursive;
+			font-size: 30px;
+			border-radius: 10px;
+			height: 40px;
+		}
+
+		h2 {
+			text-align: center;
+			color: #f15d22;
+			letter-spacing: 5px;
+			padding: 10px 100px;
+			background-color: rgb(255, 255, 255);
+			font-family: 'Shojumaru', cursive;
+			font-size: 40px;
+		}
+
+		button
+		{
+			font-size: large;
+			font-family: 'Luckiest Guy', cursive;
+			border: none;
+			background-color: #4F2400;
+			padding: 15px 90px;
+			text-align: center;
+			color: rgb(255, 255, 255);
+			border-radius: 10px;
+		}
+
+
+		button:hover
+		{
+			background-color: #F15D22;		
+		}
+
+		button:active
+		{
+			background-color: rgba(255, 255, 255, 0);
+		}
+
+		.btn 
+		{
+		border: 1px solid white;
+		background: none;
+		padding: 5px 20px;
+		font-size: 25px;
+		font-family: 'DynaPuff', cursive;
+		cursor: pointer;
+		margin: 10px;
+		transition: 0.8s;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		}
+
+		.btn1,.btn2
+		{
+			color: white;
+		}
+
+		.btn3,.btn4
+		{
+			color: white;
+		}
+
+		.btn1:hover,.btn2:hover
+		{
+			color: #f7d4b9;
+		}
+
+
+		.btn1::before,.btn3::before
+		{
+			top: 0%;
+			border-radius: 0 0 50% 50%;
+		}
+
+		.btn2::before,.btn4::before
+		{
+			bottom: 0%;
+			border-radius: 50% 50% 0 0;
+		}
+
+		.btn3::before,.btn4::before
+		{
+			height: 180%;
+		}
+		
+		.btn1:hover::before,.btn2:hover::before
+		{
+			height: 180%;
+
+		}
+
+		.btn3:hover::before,.btn4:hover::before
+		{
+			height: 0%;
+			
+		}
+
+
+		div.box1
+		{
+			background-color: rgba(255, 255, 255, 0);
+			text-align: center;
+			padding: 5;
+		}
+
+div.box2 {
+    background-color: #d0b09a; /* Change the background color to the desired beige shade */
+    padding: 10px; /* Keep the padding as is */
+}
+
+
+		.box3
+		{
+			background-color: #4F2400;
+			width: 100%;
+			margin-top: 10px;
+			border-radius: 10px;
+		}
+
+		#stage 
+		{
+		text-align: left;
+		width: 382px;
+		height: 380px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		padding: 20px;
+		padding-left: 5px;
+		padding-bottom: 20px;
+		padding-top: 15px;
+		
+		}
+
+		#stage a 
+		{
+		position: absolute;
+		}
+
+		#stage a img 
+		{
+		padding: 5px;
+		border: 1px solid #ccc;
+		background: #fff;
+		}
+
+		#stage a:nth-of-type(1) 
+		{
+		animation-name: fader;
+		animation-delay: 2s;
+		animation-duration: 1s;
+		z-index: 20;
+		}
+
+		#stage a:nth-of-type(2) 
+		{
+		z-index: 10;
+		}
+
+		#stage a:nth-of-type(n+3) 
+		{
+		display: none;
+		}
+
+		@keyframes fader 
+		{
+		from { opacity: 1.0; }
+		to   { opacity: 0.0; }
+		}
+
+		.container
+			{
+				width: 10%;
+				margin-top: 40px;
+				margin-bottom: 40px;
+				display: flex;
+				flex-direction: row;
+			}
+			
+
+		.box
+		{
+			width: 250px;
+			margin: 0 10px;
+			box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+			transition: 1s;
+
+		}
+
+		.box img
+		{
+			display: block;
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.box:hover
+		{
+			transform: scale(1.2);
+			z-index: 2;
+		}
+
+
+		.container1 
+		{
+		position: relative;
+		text-align: right;
+		color: #f15d22;
+		font-family: 'Fredoka One', cursive;
+		font-size: 30px;
+		width: 70%;
+
+		}
+
+		.container3 
+		{
+		position: relative;
+		text-align: center;
+		color: white;
+		text-shadow: -1px 1px 0 #000,
+								1px 1px 0 #000,
+								1px -1px 0 #000,
+								-1px -1px 0 #000;
+		font-family: 'Koulen', cursive;
+		font-size: 40px;
+		}
+
+		.centered 
+		{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+
+		.container2 img {
+		width: 100%;
+		height: auto;
+		}
+
+		button
+				{
+				
+				background-color: #b58f75;
+				padding: 15px 90px;
+				font-size: large;
+				font-family: 'DynaPuff', cursive;
+				color: white;
+				text-align: center;
+				border: none;
+				}
+
+		.fa-twitter
+		{
+			color:rgb(255, 255, 255);
+		}
+
+		.fa-twitter:hover
+		{
+			color: #4F2400;
+		}
+
+		.fa-instagram {
+			color: rgb(255, 255, 255);
+		}
+
+		.fa-instagram:hover {
+			color: #4F2400;
+		}
+
+		.fa-facebook {
+			color: #ffffff;
+		}
+
+		.fa-facebook:hover {
+			color: #4F2400;
+		}
+		
+footer.mastfoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+footer.mastfoot .inner.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between sections */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+footer.mastfoot .footer-widget {
+    flex: 1; /* Flex-grow to share equal space */
+    min-width: 250px; /* Ensure sections don't shrink too much */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer.mastfoot .footer-widget h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer.mastfoot .footer-widget p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer.mastfoot .footer-widget ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer.mastfoot .footer-widget ul li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer.mastfoot .footer-widget form {
+    margin-top: 20px;
+}
+
+footer.mastfoot .footer-widget .btn {
+    background-color: #f15d22;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer.mastfoot .footer-widget .btn:hover {
+    background-color: #e04c1a;
+}
+
+footer.mastfoot .nav.nav-mastfoot {
+    display: flex;
+    gap: 10px;
+}
+
+footer.mastfoot .nav.nav-mastfoot .nav-link i {
+    font-size: 20px;
+    color: #555;
+}
+
+footer.mastfoot .nav.nav-mastfoot .nav-link i:hover {
+    color: #f15d22;
+}
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F15D22;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+button {
+    font-size: large;
+    font-family: 'Luckiest Guy', cursive;
+    border: none;
+    background-color: #4f2400;
+    padding: 15px 90px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+button:hover {
+    color: #4f2400;
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+		</style>
+
+
+	</head>
+	<body id="top" style="background-image: url(images/wallpaper1.jpg)">
+		<tr>
+			<td width="100%" align="center" valign="center">
+				<table class="navbar">
+					<tr height="30" align="center">	
+						<td width="18%" class="bar">
+							<a href="index.html">Home</a>
+						</td>
+						<td width="23%" class="bar">
+							<a href="about.html">About Us</a>
+						</td>
+						<td>
+							<a href="index.html"><img src="images/logo.png" width="40%"></a>
+						</td>
+						<td width="23%" class="bar">
+							<a href="product.html">Our Product</a>
+						</td>
+						<td width="21%" class="bar">
+							<a href="contact.html">Contact Us</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	
+		<tr>
+			<td>
+				<table border="0" class="box3">
+					<tr>
+						<td id="stage" align="center">
+							<a href="images/welcome1.png"><img src="images/welcome1.png" width="800px" style="float: center;"></a>
+							<a href="images/welcome2.png"><img src="images/welcome2.png" width="800px" style="float: center;"></a>
+							<a href="images/welcome3.png"><img src="images/welcome3.png" width="800px" style="float: center;"></a>
+							<a href="images/welcome4.png"><img src="images/welcome4.png" width="800px" style="float: center;"></a>
+							<a href="images/welcome5.png"><img src="images/welcome5.png" width="800px" style="float: center;"></a>
+							<a href="images/welcome6.png"><img src="images/welcome6.png" width="800px" style="float: center;"></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<audio autoplay loop controls>
+				<source src="audio/biscuit.mp3" type="audio/mp3">
+			</audio>
+		</tr>
+		<tr>
+			<td>
+				<table border="0" width="100%">				
+					<tr>
+						<td width="100%" class="row" >
+							<h1> OUR BEST SELLER </h1>
+						</td>
+					</tr>					
+					<tr>
+						<td align="center">
+							<video width="700" controls autoplay muted>
+								<source src="video/commercial.mp4" type="video/mp4">
+							</video>
+						</td>
+					</tr>					
+					<tr>
+						<td>
+							<table align="center">
+								<tr class="container">
+									<td>
+										<p class="box"><img src="images/cookies3.png" height="250px"></p>
+									</td>								
+									<td>
+										<p class="box"><img src="images/cookies1.png" height="250px"></p>
+									</td>								
+									<td>
+										<p class="box"><img src="images/cookies2.png" height="250px"></p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+					
+					<tr>
+						<td align="center" style=" letter-spacing: 13px; padding: 13px;">
+							<button onclick="document.location='product.html'"> Click here to see our full product! </button>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<table border="0" style="padding-top: 15px;">				
+					<tr>
+						<td width="100%" border="0" class="row" colspan="2">
+							<h1> LOCATE US </h1>
+						</td>
+					</tr>					
+					<tr>
+						<td>
+							<table border="0" width="100%">
+								<tr>
+									<td class="container1" style="padding-right: 350px;">
+										<img src="images/locate.png" alt="Locate Us" style="width:70%;">
+									</td>
+									<tr>
+										<td colspan="3" align="center" height="30"></td>
+									</tr>
+									<tr>
+									<td style="padding-left: 15px;" align="center">
+										<button onclick="document.location='contact.html'"> FIND US </button>
+									</td>
+									</tr>
+								</tr>
+							</table>
+						</td>
+						
+					</tr>				
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<table border="0" style="padding-top: 15px;">				
+					<tr>
+						<td width="100%" border="1" class="row">
+							<h2 style="border-radius: 10px"> We Are Hiring! </h2>
+						</td>
+					</tr>					
+					<tr>
+						<td class="container3">
+							<img src="images/hire.png" alt="Snow" style="width:90%;">
+						</td>
+					</tr>
+					<tr height="20"></tr>					
+					<tr>
+						<td align="center" style=" letter-spacing: 13px;">
+							<button onclick="document.location='https://www.instagram.com/cloudcookiess.co?igsh=bncwOWh4ZGtudDc2'"> APPLY NOW </button>
+						</td>
+					</tr>				
+				</table>
+			</td>
+		</tr>		
+
+		<!-- Footer -->
+		<table id ="top" border="0" align="center" width="100%">
+			<tr>
+				<td colspan="6">
+					<table border="0" align="center" bgcolor="#f9f9f9" height="200">
+						<div class="inner container" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px;">
+							<td colspan="6" width="400" align="center" bgcolor="#f9f9f9">
+								<div class="footer-widget" style="text-align: center; flex: 1; min-width: 200px;">
+									<img src="images/logo.png" alt="Cloud Cookies Logo" style="width: 100px; margin: 0 auto; display: block;">
+									<p style="font-size: 12px; color: #555; margin: 10px 0;">
+									At Cloud Cookies, we believe in making life’s sweet moments even sweeter. One soft cookie at a time.
+									</p>
+									<nav class="nav nav-mastfoot" style="justify-content: center; margin-top: 5px;">
+										<a href="https://www.instagram.com/cloudcookiess/" style="margin: 0 5px;">
+											<i class="fab fa-instagram" style="font-size: 16px; color: #555;"></i>
+										</a>
+									</nav>
+								</div>
+							</td>									
+							<td colspan="6" width="400" align="left" bgcolor="#f9f9f9">
+								<div class="footer-widget" style="text-align: center; flex: 1; min-width: 200px;">
+									<h4 style="font-size: 14px; color: #333; margin-bottom: 10px;">Open Hours</h4>
+										<ul style="list-style: none; padding: 0; font-size: 12px; color: #555; line-height: 1.5;">
+											<li>Monday: Closed</li>
+											<li>Tue-Sun: 3:00 PM - 12:00 AM</li>
+										</ul>
+								</div>
+							</td>
+							<td colspan="6" width="400" align="center" bgcolor="#f9f9f9">
+								<div class="footer-widget" style="text-align: center; flex: 1; min-width: 200px;">
+									<h4 style="font-size: 14px; color: #333; margin-bottom: 10px;">Newsletter</h4>
+										<p style="font-size: 12px; color: #555; margin-bottom: 5px;">
+										Get updates and offers in your inbox!
+										</p>
+											<form id="newsletter" style="display: flex; justify-content: center; gap: 5px; flex-wrap: wrap;">
+											<input type="email" id="emailNewsletter" placeholder="Enter email" 
+												style="font-size: 12px; padding: 5px; border: 1px solid #ddd; border-radius: 3px; width: 70%;">
+											<button type="submit" class="btn btn-primary" 
+												style="font-size: 12px; background-color: #f15d22; border: none; padding: 5px 10px; color: white; border-radius: 3px;">
+												Submit
+											</button>
+											</form>
+								</div>
+							</td>
+						</div>
+					</table>							
+				</td>									
+			</tr>
+			<tr>
+				<td colspan="3" align="center" height="30"></td>
+			</tr>
+			<tr>
+				<td colspan="6" align="center"><a href="#top" class="button-topjump">Jump to Top</a></td>
+			</tr>
+				<td colspan="6" height="30" align="center">
+					<div style="text-align: center; margin-top: 3px; padding: 10px; background-color: #f15d22; color: white; font-size: 12px; margin-left: 0px;">
+						&copy; 2025 Cloud Cookies. All Rights Reserved.
+					</div>
+				</td>
+		</table>
+
+		<script>
+
+			window.addEventListener("DOMContentLoaded", function(e) {
+		
+			var stage = document.getElementById("stage");
+			var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+			var arr = stage.getElementsByTagName("a");
+			for(var i=0; i < arr.length; i++) {
+				arr[i].addEventListener("animationend", fadeComplete, false);
+			}
+		
+			}, false);
+		
+		</script>
+	</body>
+</html>

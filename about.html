@@ -1,0 +1,492 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>About Us | Cloud Cookies</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		
+		<link rel="icon" sizes="16x16" href="images/icon.png">
+		
+		
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		
+		<link rel="icon" sizes="16x16" href="images/icon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+	</head>
+	
+	<style>
+	
+	body {
+	background-color: #B58F75;
+	animation: transitionIn 0.75s;
+	}
+	
+	html {
+	scroll-behaviour: smooth;
+	}
+	
+	@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: rotateX(-10deg);
+	  }
+	  
+	  to {
+		opacity: 1;
+		transform: rotateX(0);
+	  }
+	}
+	
+	h1 {
+	color: #f6ce3f;
+	text-shadow: 
+		-3px -3px 0 #612000,
+		3px -3px 0 #612000,
+		-3px 3px 0 #612000,
+		3px 3px 0 #612000;
+	letter-spacing: 8px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 50px;
+	vertical-align: bottom;
+	background-color: #4f2400;
+	padding: 15px 30px;
+	border-radius: 10px;
+	}
+	
+	h2{
+	text-align: center;
+	font-size: 40px;  
+	text-decoration: underline;
+    letter-spacing: 2px;
+	color: white;
+	}
+	
+	h3 {
+	text-align: center;
+	font-size: 40px;
+	color: #61392D;
+	}
+	
+	p {
+	font-family: "Nunito", serif;
+	font-optical-sizing: auto;
+	font-weight: 650;
+	font-style: normal;
+	}
+	
+	.bbox {
+	margin-top : 10px;
+	width: 100%;
+	background-color: #FEECD7;
+    color: white;
+    height: 50px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+	}
+	
+	.box {
+	background-color: #4E2300;
+    color: white;
+    height: 50px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 5px solid #D9D5CB;
+    border-radius: 4px;
+	margin: 15px;
+	}
+
+	.tteam {
+	margin-top : 10px;
+	width: 100%;
+	background-color: #FEECD7;
+    color: white;
+    height: 50px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+	margin-bottom: 5px;
+	}
+	
+	.team {
+	background-color: #3B2516;
+    color: white;
+	width: 20%;
+    height: 90px;
+    box-sizing: border-box;
+    border-radius: 4px;
+	padding-bottom: 15px;
+	}
+	
+	.image-container {
+	width: 170px; /* Set the desired width */
+	height: 170px; /* Set the desired height */
+	overflow: hidden; /* Hide any overflow */
+	padding-top: 10px;
+	}
+
+	.image-container img {
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Control how the image fills the container */
+	}
+
+	
+	.about {
+	margin-top : 10px;
+    background-color: #FEFAF0;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+	}	
+	
+.button-topjump {
+margin-top: 5px;
+  display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #B58F75 !important;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.button-topjump:hover {
+  background-color: #4F2400 !important;
+}
+	
+	footer.mastfoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+footer.mastfoot .inner.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between sections */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+footer.mastfoot .footer-widget {
+    flex: 1; /* Flex-grow to share equal space */
+    min-width: 250px; /* Ensure sections don't shrink too much */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer.mastfoot .footer-widget h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer.mastfoot .footer-widget p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer.mastfoot .footer-widget ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer.mastfoot .footer-widget ul li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer.mastfoot .footer-widget form {
+    margin-top: 20px;
+}
+
+footer.mastfoot .footer-widget .btn {
+    background-color: #f15d22;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer.mastfoot .footer-widget .btn:hover {
+    background-color: #e04c1a;
+}
+
+footer.mastfoot .nav.nav-mastfoot {
+    display: flex;
+    gap: 10px;
+}
+
+footer.mastfoot .nav.nav-mastfoot .nav-link i {
+    font-size: 20px;
+    color: #555;
+}
+
+footer.mastfoot .nav.nav-mastfoot .nav-link i:hover {
+    color: #f15d22;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F15D22;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+	</style>
+	
+	<body>
+		<table id ="top" border="0" align="center" width="100%">
+			<tr>
+				<td width="100%" align="center" valign="center">
+					<table class="navbar">
+						<tr>
+							<td width="100%" align="center" valign="center">
+								<table class="navbar">
+									<tr height="30" align="center">  
+										<td width="18%" class="bar">
+											<a href="index.html">Home</a>
+										</td>
+										<td width="23%" class="bar">
+											<a href="about.html">About Us</a>
+										</td>
+										<td>
+											<a href="index.html"><img src="images/logo.png" width="40%">
+										</td>
+										<td width="23%" class="bar">
+											<a href="product.html">Our Product</a>
+										</td>
+										<td width="21%" class="bar">
+											<a href="contact.html">Contact Us</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+					
+			<tr>
+				<td>
+					<table border="0" align="center" width="100%">
+						<tr>          
+							<td><img src="images/about.png" width="100%" height="100%" style="border-radius: 10px;"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+					
+			<tr>
+				<td>
+					<table align="center" width="100%" border="0" class="about">
+						<tr>
+							<td width="40%" align="right" rowspan="2"><img src="images/shop.png" width="70%" height="20%"></td>
+								<td>
+									<h1>Cloud Cookies ‧ ₊ ˚ ⋅ ☆</h1>
+										<p align="justify" style="padding-right: 50px">Founded in 2024, Cloud Cookies was born from a simple idea: to create the softest, most irresistible cookies that bring a little joy to every bite. We’re passionate about crafting cookies that are not only delicious but feel like a treat for the soul—soft, gooey, and packed with flavor. Every cookie is made with love and care, ensuring each bite is as heavenly as the last. At Cloud Cookies, we believe in making life’s sweet moments even sweeter. Whether it’s a personal treat, a gift for a loved one, or a celebration, we’re here to deliver happiness, one soft cookie at a time.</p>
+								</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+					
+			<tr>
+				<td>
+					<table align="center" class="bbox">
+						<td width="5%"></td>
+							<td width="20%" class="box"><h2>
+								<p><h2>Vision</h2></p>
+									<p align="justify">Our company aims to become Malaysia's leading soft cookie provider through innovative flavors, premium quality ingredients, and a commitment to maintaining our signature soft texture while setting nationwide standards</p>
+							</td>
+							<td width="10%"></td>
+							<td width="20%" class="box">
+									<p><h2>Mission</h2></p>
+										<p align="justify">We aim to deliver Malaysia's finest soft cookies through diverse channels while building trust-based relationships and maintaining exceptional quality standards in every delicious bite we create.</p>
+							</td>
+						<td width="5%"></td>
+			
+					</table>
+				</td>
+			</tr>
+					
+					<tr>
+						<td>
+							<table align="center" width="100%" class="tteam" border="0" valign="center">
+								<tr align="center">					
+									<td colspan="5" valign="center">
+									<h3>Our Team</h3>
+									</td>
+								</tr>
+							
+								<tr align="center">					
+									<td width="100%" colspan="5">
+									<table align="center" border="0">
+									<tr>
+									
+									<td width="10%"></td>
+									
+									<td align="center" class="team">
+									<p class="image-container"><img src="images/s.png" width="70%"></p>
+									<p>FINANCIAL MANAGER</p>
+									<p>Sofea Adlina Binti Mohd Khairul Azlan</p>
+									<p>[2022607852]</p>
+									</td>
+									
+									<td width="10%"></td>
+									
+									<td align="center" class="team">
+									<p class="image-container"><img src="images/z.png" width="70%"></p>
+									<p>CHIEF EXECUTIVE OFFICER (CEO)</p>
+									<p>Nurul Hazimah Binti Rahmat</p>
+									<p>[2022891778]</p>
+									</td>
+									
+									<td width="10%"></td>
+									
+									<td align="center" class="team">
+									<p class="image-container"><img src="images/n.png" width="70%"></p>
+									<p>OPERATIONAL MANAGER</p>
+									<p>Mohammad Nabil Bin Abdul Rahman</p>
+									<p>[2022665386]</p>
+									
+									<td width="10%"></td>
+									
+									</td>
+									</tr>
+									</table>
+									</td>
+								</tr>
+								<tr height="20"></tr>
+							
+							
+								<tr align="center">	
+									<td width="100%" colspan="5">
+									<table align="center" border="0">
+									
+									<td width="25%"></td>
+									
+									<td align="center" class="team">
+									<p class="image-container"><img src="images/f.png" width="70%"></p>
+									<p>MARKETING MANAGER</p>
+									<p>Muhammad Faris Iman Bin Zuher</p>
+									<p>[2022820682]</p>
+									</td>
+									
+									<td width="10%"></td>
+									
+									<td align="center" class="team">
+									<p class="image-container"><img src="images/i.png" width="70%"></p>
+									<p>ADMINISTRATIVE MANAGER<p/>
+									<p>Zulaikha Jan Binti Huzairi</p>
+									<p>[2022497106]</p>
+									</td>
+									<td width="25%"></td>
+									</table>
+									</td>
+								</tr>
+							
+
+							</table>
+						</td>
+					</tr>
+					
+					
+					
+					<tr>
+						<td colspan="6">
+							<table border="0" align="center" bgcolor="#f9f9f9" height="200">
+							<div class="inner container" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px;">
+									<td colspan="6" width="400" align="center" bgcolor="#f9f9f9">
+										<div class="footer-widget" style="text-align: center; flex: 1; min-width: 200px;">
+										<img src="images/logo.png" alt="Cloud Cookies Logo" style="width: 100px; margin: 0 auto; display: block;">
+										<p style="font-size: 12px; color: #555; margin: 10px 0;">
+										At Cloud Cookies, we believe in making life’s sweet moments even sweeter. One soft cookie at a time.
+										</p>
+										<nav class="nav nav-mastfoot" style="justify-content: center; margin-top: 5px;">
+										<a href="https://www.instagram.com/cloudcookiess/" style="margin: 0 5px;">
+										<i class="fab fa-instagram" style="font-size: 16px; color: #555;"></i>
+										</a>
+										</nav>
+										</div>
+									</td>									
+									<td colspan="6" width="400" align="left" bgcolor="#f9f9f9">
+										<div class="footer-widget" style="text-align: center; flex: 1; min-width: 200px;">
+										<h4 style="font-size: 14px; color: #333; margin-bottom: 10px;">Open Hours</h4>
+										<ul style="list-style: none; padding: 0; font-size: 12px; color: #555; line-height: 1.5;">
+										<li>Monday: Closed</li>
+										<li>Tue-Sun: 3:00 PM - 12:00 AM</li>
+										</ul>
+										</div>
+									</td>
+									<td colspan="6" width="400" align="center" bgcolor="#f9f9f9">
+										<div class="footer-widget" style="text-align: center; flex: 1; min-width: 200px;">
+										<h4 style="font-size: 14px; color: #333; margin-bottom: 10px;">Newsletter</h4>
+										<p style="font-size: 12px; color: #555; margin-bottom: 5px;">
+										Get updates and offers in your inbox!
+										</p>
+										<form id="newsletter" style="display: flex; justify-content: center; gap: 5px; flex-wrap: wrap;">
+										<input type="email" id="emailNewsletter" placeholder="Enter email" 
+										style="font-size: 12px; padding: 5px; border: 1px solid #ddd; border-radius: 3px; width: 70%;">
+										<button type="submit" class="btn btn-primary" 
+										style="font-size: 12px; background-color: #f15d22; border: none; padding: 5px 10px; color: white; border-radius: 3px;">
+										Submit
+										</button>
+										</form>
+										</div>
+									</td>
+							</div>
+							</table>							
+						</td>									
+					</tr>
+					<tr>
+						<td colspan="3" align="center" height="30"></td>
+					</tr>
+					<tr>
+						<td colspan="6" align="center"><a href="#top" class="button-topjump">Jump to Top</a></td>
+					</tr>
+					<td colspan="6" height="30" align="center">
+							<div style="text-align: center; margin-top: 3px; padding: 10px; background-color: #f15d22; color: white; font-size: 12px; margin-left: 0px;">
+							&copy; 2025 Cloud Cookies. All Rights Reserved.
+							</div>
+					</td>
+</table>
+</body>
+</html>
